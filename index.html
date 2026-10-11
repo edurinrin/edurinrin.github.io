@@ -9,31 +9,65 @@
     </head>
 
     <body>
-        <header>
+        <header class="header">
               <h1>Mi Primer Página Web</h1>
-              <p>Bienvenido a mi sitio.</p>
+              <p class="subtitulo">Bienvenido a mi sitio.</p>
+                <label id="btn-tema" class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
         </header>
 
-        <nav>
+        <nav class="menu">
             <a href="#Sobre-mi">Sobre Mí</a>
             <a href="#Proyectos">Proyectos</a>
+            <a href="#Habilidades">Habilidades</a>
             <a href="https://www.google.com">Google</a>
         </nav>
 
-        <section id="Sobre-mi">
+     <main>
+        <section id="Sobre-mi" class="seccion">
             <h2>Sobre Mí</h2>
-            <img src="./img/tribisina.png" alt="Honkai Star Rail Tribbie">
-            <p>Soy estudiante de programación en la EBC</p>
+            <div class="sobre-mi-contenido">
+                <img src="./img/tribisina.png" alt="Honkai Star Rail Tribbie">
+                <div class="texto">
+                    <p>Soy estudiante de programación en la EBC</p>
+                </div>
+            </div>
         </section>
 
-       <section id="Proyectos">
+       <section id="Proyectos" class="seccion">
             <h2>Proyectos</h2>
-            <img src="./img/tribichef.png" alt="Tribbie Chibi">
-            <p>Estos son mis proyectos de los últimos 3 años</p>
+            <div class="cards">
+                <div class="proyecto-card">
+                <img src="./img/tribichef.png" alt="Tribbie Chibi">
+                <p>Estos son mis proyectos de los últimos 3 años</p>
+            </div>
+            <div class="proyecto-card">
+                <img src="./img/tribichef.png" alt="Tribbie Chibi">
+                <p>Estos son mis proyectos de los últimos 3 años</p>
+            </div>
+            <div class="proyecto-card">
+                <img src="./img/tribichef.png" alt="Tribbie Chibi">
+                <p>Estos son mis proyectos de los últimos 3 años</p>
+            </div>
+            </div>
+            
         </section>
 
-        <footer>
-            <p>Mi Primer Página Web</p>
+        <section id="Habilidades" class="seccion">
+            <h2>Habilidades</h2>
+            <div class="habilidades-grid">
+                <div class="habilidades">HTML</div>
+                <div class="habilidades">CSS</div>
+                <div class="habilidades">Python</div>
+                <div class="habilidades">JavaScript</div>
+            </div>
+        </section>
+     </main>
+
+        <footer class="footer">
+            <p>Mi Primer Página Web &copy; 2026 | Eduardo Rubio</p>
         </footer>
     
     </body>
