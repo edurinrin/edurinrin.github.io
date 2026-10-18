@@ -5,13 +5,14 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mi Primera Página</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./style.css">
     </head>
 
     <body>
         <header class="header">
-              <h1>Mi Primer Página Web</h1>
-              <p class="subtitulo">Bienvenido a mi sitio.</p>
+              <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">Mi Primer Página Web</h1>
+              <p data-aos="fade-up" data-aos-duration="650" class="subtitulo">Bienvenido a mi sitio.</p>
                 <label id="btn-tema" class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
@@ -39,15 +40,15 @@
        <section id="Proyectos" class="seccion">
             <h2>Proyectos</h2>
             <div class="cards">
-                <div class="proyecto-card">
+                <div class="proyecto-card" data-aos="zoom-in" data-aos-duration="500">
                 <img src="./img/tribichef.png" alt="Tribbie Chibi">
                 <p>Estos son mis proyectos de los últimos 3 años</p>
             </div>
-            <div class="proyecto-card">
+            <div class="proyecto-card" data-aos="zoom-in" data-aos-duration="700">
                 <img src="./img/tribichef.png" alt="Tribbie Chibi">
                 <p>Estos son mis proyectos de los últimos 3 años</p>
             </div>
-            <div class="proyecto-card">
+            <div class="proyecto-card" data-aos="zoom-in" data-aos-duration="900">
                 <img src="./img/tribichef.png" alt="Tribbie Chibi">
                 <p>Estos son mis proyectos de los últimos 3 años</p>
             </div>
@@ -56,13 +57,18 @@
         </section>
 
         <section id="Habilidades" class="seccion">
-            <h2>Habilidades</h2>
+            <h2 data-aos="fade-up" data-aos-duration="1000">Habilidades</h2>
             <div class="habilidades-grid">
-                <div class="habilidades">HTML</div>
-                <div class="habilidades">CSS</div>
-                <div class="habilidades">Python</div>
-                <div class="habilidades">JavaScript</div>
+                <div class="habilidades" data-aos="flip-left" data-aos-duration="300">HTML</div>
+                <div class="habilidades" data-aos="flip-left" data-aos-duration="300">CSS</div>
+                <div class="habilidades" data-aos="flip-left" data-aos-duration="300">Python</div>
+                <div class="habilidades" data-aos="flip-left" data-aos-duration="300">JavaScript</div>
             </div>
+        </section>
+
+        <section class="seccion contador-seccion">
+            <h2 id="numero">0</h2>
+            <button id="btn-contador" type="button">Hacer Click</button>
         </section>
      </main>
 
@@ -71,7 +77,10 @@
         </footer>
     
     </body>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="./script.js"></script>
 
 </html>

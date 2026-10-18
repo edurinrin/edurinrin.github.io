@@ -240,6 +240,39 @@ body.oscuro footer{
     background-color: rgb(154, 144, 132);
 }
 
+.contador-seccion{
+    text-align: center;
+}
+
+#btn-contador{
+    background-color: #2c261d;
+    color: #eae5e5;
+    border: none;
+    padding: 14px 32px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3, transform 0.3s;
+}
+
+#btn-contador:hover{
+    background-color: #484031;
+    transform: translateY(-2px);
+}
+
+#btn-contador:active{
+    transform: translateY(0);
+}
+
+body.oscuro #btn-contador{
+    background-color: #c9b391;
+}
+
+body.oscuro #btn-contador:hover{
+    background-color: #857a64;
+    transform: translateY(-2px);
+}
+
 @media (max-width: 600px) {
     header{
         padding: 10px;
