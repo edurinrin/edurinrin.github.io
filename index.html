@@ -1,86 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100;200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="animate__animated animate__fadeIn">
+    <header class="header">
+        <h1>Mi Página Web</h1>
+        <p class="textito">Proyecto Personal</p>
+             <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider round"></span>
+            </label>
+    </header>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mi Primera Página</title>
-        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-        <link rel="stylesheet" href="./style.css">
-    </head>
+    <nav class="menu">
+        <a href="#SobreMi">Sobre Mí</a>
+        <a href="#MisIntereses"> Mis Intereses</a>
+        <a href="#Habilidades">Habilidades</a>
+    </nav>
+  
+    <hr>
 
-    <body>
-        <header class="header">
-              <h1 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="500">Mi Primer Página Web</h1>
-              <p data-aos="fade-up" data-aos-duration="650" class="subtitulo">Bienvenido a mi sitio.</p>
-                <label id="btn-tema" class="switch">
-                    <input type="checkbox">
-                    <span class="slider round"></span>
-                </label>
-        </header>
-
-        <nav class="menu">
-            <a href="#Sobre-mi">Sobre Mí</a>
-            <a href="#Proyectos">Proyectos</a>
-            <a href="#Habilidades">Habilidades</a>
-            <a href="https://www.google.com">Google</a>
-        </nav>
-
-     <main>
-        <section id="Sobre-mi" class="seccion">
+    <main>
+        <section id="SobreMi" class="section">
             <h2>Sobre Mí</h2>
-            <div class="sobre-mi-contenido">
-                <img src="./img/tribisina.png" alt="Honkai Star Rail Tribbie">
+            <div class="contenidoSM">
                 <div class="texto">
-                    <p>Soy estudiante de programación en la EBC</p>
+                    <p>Mi Nombre es Eduardo Rubio Laviada. Tengo 22 años y vivo en Mérida, Yucatán.</p> 
+                    <br>
+                    <p>Me encuentro estudiando la Licenciatura Ejecutiva de Programación y Transformación Digital en la EBC.</p>
+                    <br>
+                    <p>Me considero una persona muy empática y sensible, valores los cuales considero de suma importancia y en los que baso mis acciones.</p>
+                    <br>
+                    <p>Actualmente tengo como meta aprender y mejorar como desarrollador Front End.</p>
                 </div>
+                <img class="imgSM" src="./img/Lambing.jpg" alt="">
             </div>
         </section>
 
-       <section id="Proyectos" class="seccion">
-            <h2>Proyectos</h2>
-            <div class="cards">
-                <div class="proyecto-card" data-aos="zoom-in" data-aos-duration="500">
-                <img src="./img/tribichef.png" alt="Tribbie Chibi">
-                <p>Estos son mis proyectos de los últimos 3 años</p>
+     <hr class="divisor">
+
+        <section id="MisIntereses" class="section">
+            <h2>Mis Intereses</h2>
+            <div class="contenidoInt">
+                <div class="textoInt">
+                    <p>
+                       Muchas personas a mi alrededor me conocen o identifican por mis intereses muy marcados.
+                       Tienden a volverse una parte fundamental de mi personalidad y mi forma de vivir y desarrollarme más que
+                       lo suele ser para otras personas.
+                    </p>
+                    <hr class="hrInt">
+                </div>
+                <img src="./img/setup.jpg" alt="">
             </div>
-            <div class="proyecto-card" data-aos="zoom-in" data-aos-duration="700">
-                <img src="./img/tribichef.png" alt="Tribbie Chibi">
-                <p>Estos son mis proyectos de los últimos 3 años</p>
+
+            <div class="contenidoInt">
+                <img src="./img/teclado.jpg" alt="">
+                <div class="textoInt2">
+                    <p>
+                        A lo largo de mi vida siempre he sido una persona muy tranquila y eso
+                        se refleja notoriamente en mis intereses y las cosas a las que suelen 
+                        llamar mi interés. 
+                    </p>
+                    <br>
+                    <p>
+                        Desde chico tuve muchísimo interés e intuición para la tecnología,
+                        que eventualmente se fue expandiendo a un interés por las redes sociales y
+                        los videojuegos principalmente, son lo que más me gusta y disfruto por horas y horas todos los días.
+                    </p>
+                    <br>
+                    <p>
+                        La música de igual manera es algo que me llena muchísimo, siendo el Vocaloid y el K-pop mis
+                        primeras introducciones a un gusto musical. El cual con el paso de los años ha cambiado bastante, 
+                        pues últimamente he encontrado mi lugar en géneros como el olk y todos sus derivados.
+                    </p>
+                    <br>
+                    <p>
+                        Por último, las redes sociales han tenido y seguirán teniendo un impacto alto en mi vida,
+                        pues es en donde más puedo expresar todos mis intereses con otros usuarios, de los cuales varios
+                        se han convertido en personas muy especiales para mí.
+                    </p>
+                    <br>
+                    <div class="navIntereses">
+                    <a href="intereses.html">¡Conoce más sobre mis intereses!</a>
+                    </div>
+                </div>
+                
             </div>
-            <div class="proyecto-card" data-aos="zoom-in" data-aos-duration="900">
-                <img src="./img/tribichef.png" alt="Tribbie Chibi">
-                <p>Estos son mis proyectos de los últimos 3 años</p>
-            </div>
-            </div>
-            
         </section>
 
-        <section id="Habilidades" class="seccion">
-            <h2 data-aos="fade-up" data-aos-duration="1000">Habilidades</h2>
-            <div class="habilidades-grid">
-                <div class="habilidades" data-aos="flip-left" data-aos-duration="300">HTML</div>
-                <div class="habilidades" data-aos="flip-left" data-aos-duration="300">CSS</div>
-                <div class="habilidades" data-aos="flip-left" data-aos-duration="300">Python</div>
-                <div class="habilidades" data-aos="flip-left" data-aos-duration="300">JavaScript</div>
+     <hr class="divisor">
+ 
+        <section id="Habilidades" class="section">
+            <h2>Habilidades</h2>
+            <p class="texto">Poco a poco voy adquiriendo conocimientos en mi carrera. 
+            Éstas son algunas de las habilidades que he adquirido en mi primer año como estudiante en la EBC.
+            </p>  
+            <hr>
+            <div class="contenidoHB">
+                <div class="habilidades">HTML</div>
+                <div class="habilidades">CSS</div>
+                <div class="habilidades">JavaScript</div>
+                <div class="habilidades">Bootstrap</div>
+                <div class="habilidades">Python</div>
+                <div class="habilidades">SQL</div>
+                <div class="habilidades">Excel</div>
             </div>
         </section>
+    </main>
 
-        <section class="seccion contador-seccion">
-            <h2 id="numero">0</h2>
-            <button id="btn-contador" type="button">Hacer Click</button>
-        </section>
-     </main>
+    <footer>
+    <p>Proyecto Final &copy; 2026 | Eduardo Rubio</p>
+    </footer>
 
-        <footer class="footer">
-            <p>Mi Primer Página Web &copy; 2026 | Eduardo Rubio</p>
-        </footer>
-    
-    </body>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+   
+<button id="backToTopBtn">
+    &#8679;
+</button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
-
+</body>
 </html>
+
